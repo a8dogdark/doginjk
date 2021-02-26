@@ -170,14 +170,14 @@ NEWDL
 ;    .BY $52,$72,$B4,$EA,$32
 ;NOSEPO2
 ;    .BY $FF,$FF
-TABLA
-    .BY $28,$CA,$00,$44,$00
+;TABLA
+;    .BY $28,$CA,$00,$44,$00
 ERROR
-    LDX #<MERR	;$F3
-    LDA #>MERR	;$CC
-    STX DLERR	;$CC4E
-    STA DLERR+1	;$CC4F
-    JSR $CE0E
+    LDX #<MERR		;$F3
+    LDA #>MERR		;$CC
+    STX DLERR		;$CC4E
+    STA DLERR+1		;$CC4F
+    JSR VUELTA		;$CE0E
 	JMP GRAB
 VUELTA
     LDA #$3C

@@ -724,9 +724,9 @@ GAUTO
     JSR $E459
     jsr injektor
     JSR INITSIOV
-    LDX #$f0
-    ldy #$00
-    jsr time
+;    LDX #$f0
+;    ldy #$00
+;    jsr time
     ldx #<lload		;$bc
     ldy #>lload		;$03
     STX $0308
